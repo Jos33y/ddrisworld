@@ -109,12 +109,12 @@ include("includes/dbcon.php");
 
                 <h6>Find Us:</h6>
                 <?php 
-                $customer_id = 2;
-                $get_address = "select * from customer_info where customer_id=$customer_id";
+                $customer_id = 1;
+                $get_address = "select * from user_db where user_id=$customer_id";
                 $run_address = mysqli_query($conn, $get_address);
                $row_add= mysqli_fetch_array($run_address);
-                    $first_name = $row_add['firstname'];
-                    $last_name = $row_add['lastname'];
+                    $first_name = $row_add['first_name'];
+                    $last_name = $row_add['last_name'];
                     $email = $row_add['email'];
                    $phone = $row_add['phone_number'];
                    $address = $row_add['address'];
@@ -182,10 +182,10 @@ include("includes/dbcon.php");
 ?>
 
                     <p class="social">
-                        <a href="https://<?php echo $fb; ?>" target="_blank" class="fa fa-facebook"></a>
-                        <a href="https://<?php echo $tweet; ?>" target="_blank"  class="fa fa-twitter"></a>
-                        <a href="https://<?php echo $insta; ?>" target="_blank" class="fa fa-instagram"></a>
-                        <a href="https://<?php echo $whatsapp; ?>" target="_blank" class="fa fa-whatsapp"></a>
+                        <a href="https://<?php echo $fb; ?>" target="_blank"class="fa fa-facebook" aria-hidden="true"></a>
+                        <a href="https://<?php echo $tweet; ?>" target="_blank"  class="fa fa-twitter" aria-hidden="true"></a>
+                        <a href="https://<?php echo $insta; ?>" target="_blank" class="fa fa-instagram" aria-hidden="true"></a>
+                        <a href="https://<?php echo $whatsapp; ?>" target="_blank" class="fa fa-whatsapp" aria-hidden="true"></a>
                         <a href="https://<?php echo $email; ?>" target="_blank" class="fa fa-envelope"></a>
                     </p>
 
