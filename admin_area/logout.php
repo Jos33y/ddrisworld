@@ -4,6 +4,6 @@ session_start();
 
 session_destroy();
 
-echo "<script>window.open('https://e-acez.com/signin.php', '_self')</script>";
+echo "<script>window.open('https://e-acez.com/sign-in.php', '_self')</script>";
 
 ?>

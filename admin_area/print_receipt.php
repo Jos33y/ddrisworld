@@ -4,7 +4,7 @@ include("includes/dbcon.php");
 
 if(!isset($_SESSION['email'])){
 
-   echo "<script>window.open('https://e-acez.com/signin.php', '_self')</script>";
+   echo "<script>window.open('https://e-acez.com/sign-in.php', '_self')</script>";
 
 }else{
 
