@@ -88,6 +88,10 @@ if(isset($_GET['pro_id'])){
 
 
 <body>
+  <!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
       
       <?php  
        $get_logo = "select * from logo";
@@ -168,7 +172,7 @@ if(isset($_GET['pro_id'])){
                       <li class="nav-item <?php if($active=='Home') echo'active'; ?>"><a class="nav-link" href="index.php" >Home</a></li>
                     <li class="nav-item <?php if($active=='Shop') echo'active'; ?>"><a class="nav-link" href="showroom.php">Showroom</a></li>
 
-                    <li class="nav-item">
+                    <li class="nav-item <?php if($active=='Account') echo'active'; ?>">
                           <?php        
                              if(!isset($_SESSION['customer_email'])){
 

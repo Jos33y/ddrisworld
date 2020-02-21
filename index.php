@@ -4,10 +4,6 @@
 ?>  
 
 
-<style>
-  
-</style>
-
 <div class="container-fluid home-page-header">
    <?php  
        $get_logo = "select * from logo";
@@ -160,20 +156,6 @@
         include("includes/footer.php");
 
         ?>
-
-
-
-
-  <!--====== Javascripts & Jquery ======-->
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.slicknav.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.nicescroll.min.js"></script>
-	<script src="js/jquery.zoom.min.js"></script>
-	<script src="js/jquery-ui.min.js"></script>
-	<script src="js/main.js"></script>
-
 
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>

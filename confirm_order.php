@@ -236,7 +236,7 @@ $ip_add = getRealIpUser();
     var handler = PaystackPop.setup({
       key: 'pay stack public key',
       email: '<?php echo $customer_email; ?>',
-      amount: <?php echo $total; ?>00,
+      amount: '<?php echo $total; ?>00',
       metadata: {
          custom_fields: [
             {
